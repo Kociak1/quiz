@@ -8,8 +8,9 @@
 </head>
 <body>
 <?php
+    echo "works";
             $db = new PDO("pgsql:host=ec2-34-242-89-204.eu-west-1.compute.amazonaws.com;port=5432;dbname=ddqbqlr89jjlr1","hxezpxeiecwddf","2c587d88221ddd8209399210ac7e03465c4200655d4c395976559e5cede9f193");
-            echo "works";
+            
 
             $stmt = $db -> prepare('SELECT imie FROM uczniowie');
             $stmt -> execute();
