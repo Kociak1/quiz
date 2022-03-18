@@ -9,7 +9,8 @@
 <body>
 <?php
     echo "works";
-           $db = new PDO("pgsql:host=ec2-34-242-89-204.eu-west-1.compute.amazonaws.com;dbname=ddqbqlr89jjlr1","hxezpxeiecwddf","2c587d88221ddd8209399210ac7e03465c4200655d4c395976559e5cede9f193");
+    try {
+    $db = new PDO("pgsql:host=ec2-34-242-89-204.eu-west-1.compute.amazonaws.com;dbname=ddqbqlr89jjlr1","hxezpxeiecwddf","2c587d88221ddd8209399210ac7e03465c4200655d4c395976559e5cede9f193");
             $stmt = $db -> prepare('create table uczniowie(id int PRIMARY KEY AUTO_INCREMENT,imie text);');
             $stmt -> execute();
             $stmt = $db -> prepare('insert into uczniowie(imie) values("jan"),("adam"),("michał"),("piotr")');
@@ -27,6 +28,13 @@
             }
                 $db=null;
 
-            ?>
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
+
+    
+           
+      ?>
 </body>
 </html>
