@@ -14,7 +14,7 @@
             
             if(isSet($_POST['imie'])) {
             $stmt = $db -> prepare("insert into uczniowiee(imie) values(:imie)");
-               $stmt -> execute([["imie"] => $_POST['imie']]);
+               $stmt -> execute(["imie" => $_POST['imie']]);
             }
             
 
