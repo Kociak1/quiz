@@ -30,7 +30,7 @@
             }
                 $db=null;
 
-} catch (PDOException $e) {
+} catch (Exception $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
 }
