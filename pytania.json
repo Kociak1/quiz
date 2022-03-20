@@ -1,0 +1,47 @@
+[
+    {
+        "pytanie": "Jak nazywa się niemiecka kolęda i kto jest jej autorem",
+        "odpowiedzi": [
+            "Wenn Christus geboren wird, Joseph Mohr",
+            "Wer liegt in der Krippe, Gruber",
+            "Stille Nacht, Joseph Mohr"
+           ],
+        "poprawna": "Stille Nacht, Joseph Mohr"
+    },
+    {
+        "pytanie": "Święto zjednoczenia niemiec przypada",
+        "odpowiedzi": [
+            "11 listopada",
+            "3 października",
+            "5 grudnia"
+           ],
+        "poprawna": "3 października"
+    },
+    {
+        "pytanie": "Kiedy przypada dzień świętego marcina ",
+        "odpowiedzi": [
+            "11 listopada",
+            "3 października",
+            "5 grudnia"
+           ],
+        "poprawna": "11 listopada"
+    },
+    {
+        "pytanie": "Kiedy przypada Krampusnacht ",
+        "odpowiedzi": [
+            "11 listopada",
+            "3 października",
+            "5 grudnia"
+           ],
+        "poprawna": "5 grudnia"
+    },
+    {
+        "pytanie": "Co znajduje się pod choinką ",
+        "odpowiedzi": [
+            "Prezenty",
+            "Szopka",
+            "Szopka i prezenty"
+           ],
+        "poprawna": "Szopka"
+    }
+]
