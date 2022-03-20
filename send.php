@@ -6,7 +6,7 @@ $stmt -> execute(["imie" => $_POST["imie"], "poprawne" => $_POST["poprawne"] ]);
 $result = $stmt -> fetchAll();
 if(count($result) == 0) {
     $stmt = $db -> prepare("insert into wyniki(imie,poprawne,punkty) values(:imie,:poprawne,:punkty)");
-$stmt -> execute(["imie" => $_POST["imie"], "poprawne" => $_POST["poprawne"],"punkty" => $_POST["punkty"] ]);
+$stmt -> execute(["imie" => $_POST["imie"], "poprawne" => $_POST["poprawne"],"punkty" => round($_POST["punkty"],2) ]);
 }
 $stmt = $db -> prepare("select id from wyniki WHERE imie=:imie and poprawne=:poprawne;");
 $stmt -> execute(["imie" => $_POST["imie"], "poprawne" => $_POST["poprawne"] ]);
