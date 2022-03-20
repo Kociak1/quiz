@@ -86,7 +86,7 @@ pytania[index].odpowiedzi.forEach(element => {
             },1400)
         } else {
             document.querySelector("#uname").value=imie
-            document.querySelector("#punkty").value=punkty
+            document.querySelector("#punkty").value=Math.round(punkty,2)
             document.querySelector("#poprawne").value=dobre
             document.querySelector("#frm").submit()
 
@@ -118,7 +118,7 @@ if(time>=60 && index < len-1) {
 }
 if(time>=60 && index == len-1) {
     document.querySelector("#uname").value=imie
-    document.querySelector("#punkty").value=punkty
+    document.querySelector("#punkty").value=Math.round(punkty,2)
     document.querySelector("#poprawne").value=dobre
     document.querySelector("#frm").submit()
 }
